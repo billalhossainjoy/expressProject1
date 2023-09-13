@@ -11,7 +11,7 @@ connectDB()
 
 app.config = {
     port: process.env.port || 8080,
-    host: '192.168.0.1'
+    host: '127.0.0.1' || '192.168.0.1'
 }
 
 app.use(express.static(path.join(__dirname,'/public')))
